@@ -3,8 +3,8 @@ from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 import time
 
-user_name = "korededavid03@gmail.com"
-password = "fyxry8-mawvIj-xawzok"
+user_name = "LINKEDIN-EMAIL"
+password = "LINKEDIN-PASSWORD"
 
 var = ("https://www.linkedin.com/jobs/search/?f_LF=f_AL&geoId=102257491&"
        "keywords=python%20developer&location=London%2C"
@@ -28,9 +28,9 @@ Enter_email.send_keys(user_name)
 Enter_password.send_keys(password)
 time.sleep(2)
 Enter_email.send_keys(Keys.RETURN)
-# job_search.send_keys('python Developer')
-# location.send_keys('united kingdom')
-# job_search.send_keys(Keys.RETURN)
+job_search.send_keys('JOB-TITLE')
+location.send_keys('YOUR-LOCATION')
+job_search.send_keys(Keys.RETURN)
 
 
 # TODO: This needs an authentication most of the time you can still complete it later.
